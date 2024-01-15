@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Message </title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.ico">
+</head>
+
+<body>
+    <div>
+        <h1 class="titrepage"> Message </h1>
+    </div>
+    <div class="struct">
+        <form class="content">
+            <div id="nameinfo">
+                <div id="proprety" onmouseover="infoproprety()" onmouseleave="hidproprety()">
+                    <span id="editname" onclick="namenumberedit()"> Edit Name </span>
+                </div>
+                <div id="createname" onmouseleave="hidcreatename()">
+                    <div><label for="newname" id="newname0"> Name : <input type="text" placeholder="New Name"
+                                id="newname"> </label> </div> <br>
+                    <div><label for="newnumber" id="newnumber0"> Number : <input type="text" placeholder="New Number"
+                                id="newnumber"> </label> </div> <br>
+                    <input type="button" value="Change" onclick="editchange()" id="butchangen">
+                </div>
+                <div class="elemnt">
+                    <input type="button" value=" | " id="optin" onmouseover="infoproprety()"
+                        onmouseleave="hidproprety()">
+                    <input type="button" value="->" id="retr" onclick="infonamehid()">
+                </div>
+                <div>
+                    <div>
+                        <img src="img.jpg" id="imagepersn">
+                    </div>
+                    <div>
+                        <p id="namepersn"> Aiman Moulim </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="calldata">
+                    <span id="callinfo"> Call </span>
+                    <span id="detailinfo" onmousemove="viewdetail()" onmouseleave="hidetail()"> Details </span>
+                </div>
+                <div id="infodetail" onmousemove="viewdetail()" onmouseleave="hidetail()">
+                    <p class="information"> Phone : <span id="phoneinfo"> 0622717913 </span>
+                        <input type="button" value="Copier" onclick="copiernum()">
+                    </p>
+                </div>
+
+            </div>
+            <div id="seeoption" onmouseleave="hidoptions()">
+                <ul id="listoptions">
+                    <li id="option1" onclick="infonameviiiew()"> Cantact Info </li>
+                    <li id="option2" onclick="editbackg()"> Edit Background </li>
+                </ul>
+            </div>
+            <div id="colorbackg">
+                <input type="text" placeholder="Background-Color" id="backgdcolor"> <br>
+                <input type="button" value="Appel" onclick="changebackg()" id="butchangebackg">
+            </div>
+            <section class="name">
+                <div class="structname">
+                    <div class="option">
+                        <span id="opt1" onclick="seeoptions()"> | </span>
+                        <span id="opt2"> Hi </span>
+                        <span id="opt3"> Call </span>
+                    </div>
+                    <div class="name0">
+                        <span id="nam" onclick="infonameview()"> Aiman Moulim </span>
+                        <img src="img.jpg" id="imgpersn">
+                    </div>
+                </div>
+            </section>
+            <div id="messg">
+                <section id="contentmessg">
+
+                </section>
+                <div id="adding">
+                    <div class="antibut">
+                        <input type="button" value="X" onclick="antiadd()">
+                    </div>
+                    <div id="elemntadd">
+                        <input type="file" id="addfile">
+                    </div>
+                </div>
+            </div>
+            <section class="barsent">
+                <div class="structsent">
+                    <div class="addsent">
+                        <span id="sentmessg" onclick="createmessg()"> SEND </span>
+                        <span id="addmessg" onclick="addmessage()"> ADD </span>
+                    </div>
+                    <div class="write">
+                        <textarea id="writemessg">
+
+                        </textarea>
+                    </div>
+                    <div class="other">
+
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
